@@ -1,0 +1,22 @@
+<div *ngIf="buscando" class="card  mx-auto " style="width: 18rem; margin: 70px; ">
+    <img *ngIf="icon" src='https://openweathermap.org/img/wn/{{icon}}@2x.png' class="card-img-top w-50 mx-auto"
+        alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{ciudad}}</h5>
+
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Temperatura Alta: <span>{{tempAlta}}</span></li>
+        <li class="list-group-item">Temperatura Baja: <span>{{tempBaja}}</span></li>
+        <li class="list-group-item">Humedad: <span>{{humedad}} %</span> </li>
+    </ul>
+    <div class="card-body">
+        <p href="#" class="card-link">Cielo: <span>{{cielo}}</span></p>
+    </div>
+</div>
+<div *ngIf="!buscando" class="mx-auto " style="display: flex;justify-content: center; margin: 160px; ">
+    <button class="mx-auto m-4 btn btn-outline-success " style="width: 250px; ">Escribe Una Ciudad Arriba y obten El
+        Tiempo
+        En esa
+        Ciudad</button>
+</div>

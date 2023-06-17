@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg " style="background-color: #db6930;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">With MohaDev</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <form class="d-flex w-50" role="search">
+            <input [formControl]="ciudadControl" class="form-control me-2 w-full text-white"
+                style="background-color: #54456b;" type="search" placeholder="Introduce una Ciudad..."
+                aria-label="Buscar">
+            <button (click)="actualizarCiudad($event)" class="btn btn-outline-success text-white"
+                type="submit">Search</button>
+        </form>
+
+    </div>
+</nav>
